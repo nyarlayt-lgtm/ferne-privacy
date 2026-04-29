@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Your Ferne Account</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f0eb;
+            color: #2d2d2d;
+            line-height: 1.7;
+        }
+        header {
+            background: #2a8c78;
+            padding: 28px 24px;
+            text-align: center;
+        }
+        header h1 {
+            color: white;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+        header p {
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        .container {
+            max-width: 680px;
+            margin: 40px auto;
+            padding: 0 24px 60px;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+        }
+        p { margin-bottom: 14px; color: #444; font-size: 15px; }
+        .steps { counter-reset: step; list-style: none; padding: 0; }
+        .steps li {
+            counter-increment: step;
+            display: flex;
+            gap: 16px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+        .steps li::before {
+            content: counter(step);
+            background: #2a8c78;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .steps li div { font-size: 15px; color: #444; }
+        .steps li strong { color: #1a1a1a; display: block; margin-bottom: 4px; }
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+        .data-table th {
+            background: #f0f7f5;
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 700;
+            color: #2a8c78;
+            border-bottom: 2px solid #e0eeea;
+        }
+        .data-table td {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: #444;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .badge-deleted {
+            background: #fdecea;
+            color: #c0392b;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+        .badge-kept {
+            background: #fff8e1;
+            color: #b07d00;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+        .email-box {
+            background: #f0f7f5;
+            border: 1px solid #c0ddd7;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-top: 12px;
+        }
+        .email-box a {
+            color: #2a8c78;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .warning {
+            background: #fff8e1;
+            border-left: 4px solid #f0b429;
+            border-radius: 0 12px 12px 0;
+            padding: 16px 20px;
+            font-size: 14px;
+            color: #7a5c00;
+            margin-top: 16px;
+        }
+        footer {
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+            padding: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌿 Delete Your Ferne Account</h1>
+    <p>ferne.care · ferne.app@gmail.com</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>How to Delete Your Account</h2>
+        <p>You can request deletion of your Ferne account and all associated data by following the steps below. Once confirmed, your data will be permanently removed within <strong>30 days</strong>.</p>
+
+        <ol class="steps">
+            <li>
+                <div>
+                    <strong>Option 1 — In the App</strong>
+                    Open Ferne → Go to your <strong>Profile</strong> tab → Tap <strong>Edit Profile</strong> → Scroll to the bottom and tap <strong>"Delete My Account"</strong>.
+                </div>
+            </li>
+            <li>
+                <div>
+                    <strong>Option 2 — By Email</strong>
+                    Send an email to <a href="mailto:ferne.app@gmail.com">ferne.app@gmail.com</a> with the subject line <strong>"Account Deletion Request"</strong> and include the email address associated with your Ferne account.
+                </div>
+            </li>
+        </ol>
+
+        <div class="warning">
+            ⚠️ Account deletion is permanent and cannot be undone. All your health data, logs, and insights will be removed.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>What Gets Deleted</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Action</th>
+                    <th>Retention</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Account & email address</td>
+                    <td><span class="badge-deleted">Deleted</span></td>
+                    <td>Within 30 days</td>
+                </tr>
+                <tr>
+                    <td>Health logs (hot flashes, symptoms, mood, sleep, period)</td>
+                    <td><span class="badge-deleted">Deleted</span></td>
+                    <td>Within 30 days</td>
+                </tr>
+                <tr>
+                    <td>AI insights & generated reports</td>
+                    <td><span class="badge-deleted">Deleted</span></td>
+                    <td>Within 30 days</td>
+                </tr>
+                <tr>
+                    <td>Profile information (name, date of birth, phase)</td>
+                    <td><span class="badge-deleted">Deleted</span></td>
+                    <td>Within 30 days</td>
+                </tr>
+                <tr>
+                    <td>Subscription & transaction records</td>
+                    <td><span class="badge-kept">Kept</span></td>
+                    <td>7 years (legal requirement)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Contact Us</h2>
+        <p>If you have any questions about the deletion process or your data, please reach out:</p>
+        <div class="email-box">
+            📧 <a href="mailto:ferne.app@gmail.com">ferne.app@gmail.com</a><br><br>
+            We respond to all requests within <strong>5 business days</strong>.
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 Ferne.care · All rights reserved
+</footer>
+
+</body>
+</html>
